@@ -1,0 +1,730 @@
+{
+  "1053cb6c6f395c84": {
+    "c": "Nos espaces",
+    "i": 1,
+    "t": "h2"
+  },
+  "10e9cc8f297bc282": [
+    {
+      "c": "Votre espace de travail, à votre façon",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Bureaux flexibles, bureaux privés et salles de réunion au cœur de la ville. Rejoignez une communauté dynamique de créateurs, de fondateurs et de professionnels en télétravail.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "14f0f47ccdede56c": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": "Capacité",
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "1c3b0670144a71b0": {
+    "c": "Visualisation du plan d'étage bientôt disponible",
+    "i": 1,
+    "t": "p"
+  },
+  "1cd7ee696352dcbb": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " espaces trouvés"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " espaces trouvés"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " espaces trouvés"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " espace trouvé"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
+  "1f8fdd7ce4fdea67": "Parcourir les espaces",
+  "201ae7f9f9c94f97": {
+    "c": "Comparer les offres",
+    "i": 1,
+    "t": "h2"
+  },
+  "235998c8a68c6e58": {
+    "c": "Gratuit",
+    "i": 1,
+    "t": "span"
+  },
+  "276afefde2785962": {
+    "c": "Plan d'étage",
+    "i": 1,
+    "t": "h2"
+  },
+  "29c6c9f2c032b319": {
+    "c": "Ceci est un exemple d'application développée avec General Translation pour illustrer l'internationalisation. Il ne s'agit pas d'un vrai espace de coworking ou service.",
+    "i": 1,
+    "t": "div"
+  },
+  "29dd8b2fea28b1b4": "Explorer les espaces",
+  "2a57516dae6376fa": {
+    "c": [
+      {
+        "i": 2,
+        "k": "_gt_cost_2",
+        "v": "c"
+      },
+      "/jour"
+    ],
+    "i": 1,
+    "t": "span"
+  },
+  "3336bc5b8f60effc": [
+    {
+      "c": [
+        {
+          "i": 2,
+          "t": "div"
+        },
+        " Disponible"
+      ],
+      "i": 1,
+      "t": "div"
+    },
+    {
+      "c": [
+        {
+          "i": 4,
+          "t": "div"
+        },
+        " Réservé"
+      ],
+      "i": 3,
+      "t": "div"
+    },
+    {
+      "c": [
+        {
+          "i": 6,
+          "t": "div"
+        },
+        " Sélectionné"
+      ],
+      "i": 5,
+      "t": "div"
+    }
+  ],
+  "36bd487c0cd3e9df": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_cost_2",
+        "v": "c"
+      },
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": "Par jour",
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "37d50acf0d24b3a4": "Voir les forfaits",
+  "400e30bd193fb0a4": "Espaces",
+  "43fc20ac4fbd41bf": {
+    "c": [
+      {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      " min"
+    ],
+    "i": 1,
+    "t": "span"
+  },
+  "4a8494d973ff3a9e": "CoWork Hub",
+  "4cfc51eff5e8b0bf": {
+    "c": "Aucun espace ne correspond à vos filtres. Essayez d'ajuster vos critères.",
+    "i": 1,
+    "t": "p"
+  },
+  "4e0e6f42918aeade": [
+    {
+      "c": "Espace introuvable",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "L'espace que vous recherchez n'existe pas.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "4f7a916f127fe3f8": [
+    {
+      "c": "Prêt à trouver votre espace ?",
+      "i": 1,
+      "t": "h2"
+    },
+    {
+      "c": "Rejoignez des centaines de professionnels qui ont fait de CoWork Hub leur second chez-soi.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "542fe878ba6148bc": [
+    {
+      "c": "Parcourir les espaces",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Trouvez l'espace de travail idéal pour vos besoins.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "574e31a451798430": {
+    "c": "Ce que disent nos membres",
+    "i": 1,
+    "t": "h2"
+  },
+  "5ae650ff9fbc3b42": {
+    "c": "Mensuel",
+    "i": 1,
+    "t": "span"
+  },
+  "5d292c9be81a168b": {
+    "c": [
+      {
+        "c": "Traduction générale",
+        "i": 2,
+        "t": "a"
+      },
+      {
+        "c": "Coworking Resources",
+        "i": 3,
+        "t": "a"
+      },
+      {
+        "c": "GCUC",
+        "i": 4,
+        "t": "a"
+      },
+      {
+        "c": "Deskmag",
+        "i": 5,
+        "t": "a"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "638db343bc894523": "Fonctionnalité",
+  "63ec1478086d5484": "Commencer",
+  "6997f123da6c4b31": {
+    "c": {
+      "i": 2,
+      "k": "_gt_cost_2",
+      "v": "c"
+    },
+    "i": 1,
+    "t": "span"
+  },
+  "6a228d4c13f301e5": [
+    {
+      "c": "Tarification",
+      "i": 1,
+      "t": "h3"
+    },
+    {
+      "c": [
+        {
+          "c": [
+            {
+              "c": "Par jour",
+              "i": 4,
+              "t": "span"
+            },
+            {
+              "c": {
+                "i": 6,
+                "k": "_gt_cost_6",
+                "v": "c"
+              },
+              "i": 5,
+              "t": "span"
+            }
+          ],
+          "i": 3,
+          "t": "div"
+        },
+        {
+          "c": [
+            {
+              "c": "Par mois",
+              "i": 8,
+              "t": "span"
+            },
+            {
+              "c": {
+                "i": 10,
+                "k": "_gt_cost_10",
+                "v": "c"
+              },
+              "i": 9,
+              "t": "span"
+            }
+          ],
+          "i": 7,
+          "t": "div"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
+  "6d240761602d5035": {
+    "c": [
+      "Annuel ",
+      {
+        "c": [
+          "(Économisez ",
+          {
+            "i": 3,
+            "k": "_gt_n_3",
+            "v": "n"
+          },
+          "%)"
+        ],
+        "i": 2,
+        "t": "span"
+      }
+    ],
+    "i": 1,
+    "t": "span"
+  },
+  "6df7bb7cab86e92e": "Événements",
+  "75856e6d26fad674": {
+    "d": {
+      "b": {
+        "many": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " événements"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "other": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " événements"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "plural": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " événements"
+          ],
+          "i": 2,
+          "t": "C2"
+        },
+        "singular": {
+          "c": [
+            {
+              "i": 3,
+              "k": "_gt_n_3",
+              "v": "n"
+            },
+            " événement"
+          ],
+          "i": 2,
+          "t": "C2"
+        }
+      },
+      "t": "p"
+    },
+    "i": 1,
+    "t": "Plural"
+  },
+  "7efc90499058dbca": "Adhésion",
+  "84e17ff6484716a7": {
+    "c": [
+      {
+        "d": {
+          "b": {
+            "many": {
+              "c": [
+                {
+                  "i": 4,
+                  "k": "_gt_n_4",
+                  "v": "n"
+                },
+                " places restantes"
+              ],
+              "i": 3,
+              "t": "C3"
+            },
+            "other": {
+              "c": [
+                {
+                  "i": 4,
+                  "k": "_gt_n_4",
+                  "v": "n"
+                },
+                " places restantes"
+              ],
+              "i": 3,
+              "t": "C3"
+            },
+            "plural": {
+              "c": [
+                {
+                  "i": 4,
+                  "k": "_gt_n_4",
+                  "v": "n"
+                },
+                " places restantes"
+              ],
+              "i": 3,
+              "t": "C3"
+            },
+            "singular": {
+              "c": [
+                {
+                  "i": 4,
+                  "k": "_gt_n_4",
+                  "v": "n"
+                },
+                " place restante"
+              ],
+              "i": 3,
+              "t": "C3"
+            }
+          },
+          "t": "p"
+        },
+        "i": 2,
+        "t": "Plural"
+      },
+      " de ",
+      {
+        "i": 3,
+        "k": "_gt_n_3",
+        "v": "n"
+      }
+    ],
+    "i": 1,
+    "t": "span"
+  },
+  "8b79dbd1a20c323c": {
+    "c": "Équipements",
+    "i": 1,
+    "t": "h2"
+  },
+  "930c5ddf14ca4149": {
+    "c": "Tout ce qu'il vous faut",
+    "i": 1,
+    "t": "h2"
+  },
+  "949b6367d793ab62": "Retour aux espaces",
+  "a5b19ede35a06280": {
+    "d": {
+      "b": {
+        "all": "Tous",
+        "desk": "Bureaux",
+        "meeting-room": "Salles de réunion",
+        "office": "Bureaux"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
+  "ae55971f62f1a36f": {
+    "c": {
+      "d": {
+        "b": {
+          "many": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " personnes"
+            ],
+            "i": 3,
+            "t": "C3"
+          },
+          "other": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " personnes"
+            ],
+            "i": 3,
+            "t": "C3"
+          },
+          "plural": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " personnes"
+            ],
+            "i": 3,
+            "t": "C3"
+          },
+          "singular": {
+            "c": [
+              {
+                "i": 4,
+                "k": "_gt_n_4",
+                "v": "n"
+              },
+              " personne"
+            ],
+            "i": 3,
+            "t": "C3"
+          }
+        },
+        "t": "p"
+      },
+      "i": 2,
+      "t": "Plural"
+    },
+    "i": 1,
+    "t": "span"
+  },
+  "b10734a32cdcb795": [
+    {
+      "c": "Événements communautaires",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Ateliers, réseautage et événements bien-être pour nos membres.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "b3c3a1a1d6d33515": "Une plateforme multilingue de réservation d’espaces de coworking qui illustre l’internationalisation avec General Translation. Parcourez les espaces, comparez les formules d’abonnement et découvrez les événements.",
+  "b5a035134bc1b928": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": "Pieds carrés",
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "b733a133c04973da": {
+    "c": "Conçu avec General Translation pour Next.js",
+    "i": 1,
+    "t": "p"
+  },
+  "b98baa65a554e594": [
+    {
+      "c": "Formules d'adhésion",
+      "i": 1,
+      "t": "h1"
+    },
+    {
+      "c": "Choisissez la formule adaptée à votre façon de travailler. Toutes les adhésions incluent l'accès à la communauté et les équipements de base.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "d15d4ce9981708e9": "Annuler",
+  "d6ef133448aabe82": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": {
+        "d": {
+          "b": {
+            "many": "Bureaux privés",
+            "other": "Bureaux privés",
+            "plural": "Bureaux privés",
+            "singular": "Bureau privé"
+          },
+          "t": "p"
+        },
+        "i": 4,
+        "t": "Plural"
+      },
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "d8a1c994a522f8bf": "Le plus populaire",
+  "de5fc39403a1180f": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": {
+        "d": {
+          "b": {
+            "many": "Bureaux partagés",
+            "other": "Bureaux partagés",
+            "plural": "Bureaux partagés",
+            "singular": "Bureau partagé"
+          },
+          "t": "p"
+        },
+        "i": 4,
+        "t": "Plural"
+      },
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "e0650544d7cccb7e": [
+    {
+      "c": {
+        "i": 2,
+        "k": "_gt_n_2",
+        "v": "n"
+      },
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": {
+        "d": {
+          "b": {
+            "many": "Salles de réunion",
+            "other": "Salles de réunion",
+            "plural": "Salles de réunion",
+            "singular": "Salle de réunion"
+          },
+          "t": "p"
+        },
+        "i": 4,
+        "t": "Plural"
+      },
+      "i": 3,
+      "t": "p"
+    }
+  ],
+  "e3b44f564cca49c8": {
+    "c": {
+      "d": {
+        "b": {
+          "desk": "Bureau",
+          "meeting-room": "Salle de réunion",
+          "office": "Bureau"
+        },
+        "t": "b"
+      },
+      "i": 2,
+      "t": "Branch"
+    },
+    "i": 1,
+    "t": "span"
+  },
+  "e74139c17fab1fa1": "Confirmer",
+  "e81da10f0f5e59af": {
+    "c": {
+      "i": 2,
+      "k": "_gt_date_2",
+      "v": "d"
+    },
+    "i": 1,
+    "t": "span"
+  },
+  "f64f68f55d516baa": "CoWork Hub | General Translation"
+}
