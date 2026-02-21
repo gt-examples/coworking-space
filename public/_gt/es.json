@@ -1,9 +1,47 @@
 {
+  "01150ed469ac9217": "Escritorio flexible A",
+  "05f800e80b4999e9": "Puerta y espacio de almacenamiento con llave",
+  "092e2e46781b53bb": "20 h/mes",
+  "0a88fc68ddf84207": "Gestión de correspondencia",
+  "0afcca0f0f38a7a2": "Evento mensual de networking",
+  "0ddc0855da604e0a": "Bienestar",
+  "0f8a463b998c5ebd": [
+    {
+      "c": "\"Mudarnos con nuestro equipo de una oficina en casa a una suite privada aquí fue la mejor decisión que tomamos. El entorno profesional y el internet rápido marcan toda la diferencia.\"",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Marcus Rivera",
+          "i": 3,
+          "t": "p"
+        },
+        {
+          "c": [
+            "Fundador de startup — Miembro desde ",
+            {
+              "i": 5,
+              "k": "_gt_n_5",
+              "v": "n"
+            }
+          ],
+          "i": 4,
+          "t": "p"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
   "1053cb6c6f395c84": {
     "c": "Nuestros Espacios",
     "i": 1,
     "t": "h2"
   },
+  "107468fbff4f544a": "Impresión (ilimitada)",
+  "10e38d7accb25827": "Todos los precios",
   "10e9cc8f297bc282": [
     {
       "c": "Tu Espacio de Trabajo, a Tu Manera",
@@ -16,6 +54,8 @@
       "t": "p"
     }
   ],
+  "12112597ef5124af": "Mi",
+  "12ea3c5e6870422f": "Monitores externos para cada escritorio",
   "14f0f47ccdede56c": [
     {
       "c": {
@@ -32,6 +72,13 @@
       "t": "p"
     }
   ],
+  "1604e66eb6bc13e9": "Empieza tu jornada laboral con una sesión guiada de yoga de 45 minutos en nuestra terraza. Todos los niveles son bienvenidos. Esterillas incluidas.",
+  "16b42d05da1812f7": "Amplia oficina privada en el entrepiso, con paredes de ladrillo visto y un atractivo estilo industrial. Apta para un equipo en crecimiento.",
+  "17dbba9b8d5264bc": "Ju",
+  "17f4570f9e49e7e4": "Do",
+  "19c4e439ff77ca03": "Sala de juntas",
+  "1bb90ad9d01e2506": "Señalización",
+  "1bbcb60f0f4271d4": "Aprende a crear y presentar un elevator pitch convincente. Sesión práctica con comentarios de emprendedores con experiencia.",
   "1c3b0670144a71b0": {
     "c": "Visualización del plano de planta próximamente",
     "i": 1,
@@ -105,6 +152,11 @@
     "i": 1,
     "t": "span"
   },
+  "23cf612e6fe8f545": "Monitor externo",
+  "246c7045335c26db": "Escritorio asignado Alpha",
+  "2484c3367a876054": "Sala de reuniones informal",
+  "254abaa0c0b97331": "Wi‑Fi de alta velocidad",
+  "26267d58e602e413": "Tu propio escritorio fijo con espacio de almacenamiento con llave. Situado en nuestra zona dedicada más tranquila, junto a otros miembros de larga estancia.",
   "276afefde2785962": {
     "c": "Plano de planta",
     "i": 1,
@@ -128,6 +180,14 @@
     "i": 1,
     "t": "span"
   },
+  "2d58c4bc9e121888": "Monitor externo incluido",
+  "2d8b7fe3c4a69919": "Acceso al edificio 24/7",
+  "2e120d15af3be9ff": "Vi",
+  "2f9e9200bb756f5f": "$50-$150/día",
+  "303a3e77ccf7d859": "Impresiones (50 páginas/mes)",
+  "30defb68e9b15f9f": "Networking",
+  "326c05a99af24649": "Ma",
+  "32a87d8da8f3f419": "Café y té",
   "3336bc5b8f60effc": [
     {
       "c": [
@@ -163,6 +223,9 @@
       "t": "div"
     }
   ],
+  "33737b295d1ad325": "Nombre de la empresa en la puerta",
+  "33de4ad2b70ed944": "Todas las capacidades",
+  "3475b11446ee9e92": "Más de $150/día",
   "36bd487c0cd3e9df": [
     {
       "c": {
@@ -180,7 +243,11 @@
     }
   ],
   "37d50acf0d24b3a4": "Ver planes",
+  "393d17ba677a797d": "Almacenamiento con cerradura",
   "400e30bd193fb0a4": "Espacios",
+  "42a1d912877d7ac4": "Cabinas telefónicas",
+  "42b5da3dd11ba3ff": "Proyector",
+  "430a8cc8f0f13f4d": "Café y té ilimitados",
   "43fc20ac4fbd41bf": {
     "c": [
       {
@@ -193,12 +260,25 @@
     "i": 1,
     "t": "span"
   },
+  "48ac362ec912569e": "Gestión de correo electrónico",
+  "4a7f23a7e33e69f3": "10 horas de uso de sala de reuniones al mes",
   "4a8494d973ff3a9e": "CoWork Hub",
+  "4b365fdfe46e0317": {
+    "c": "/mes",
+    "i": 1,
+    "t": "span"
+  },
+  "4b7126205760267f": {
+    "c": "/año",
+    "i": 1,
+    "t": "span"
+  },
   "4cfc51eff5e8b0bf": {
     "c": "Ningún espacio coincide con tus filtros. Intenta ajustar los criterios.",
     "i": 1,
     "t": "p"
   },
+  "4dd4c7f5bc66ca90": "Puesto flexible en un espacio diáfano de nuestra área principal de trabajo, con luz natural y sillas ergonómicas. Ideal para autónomos y trabajadores remotos.",
   "4e0e6f42918aeade": [
     {
       "c": "Espacio No Encontrado",
@@ -211,6 +291,7 @@
       "t": "p"
     }
   ],
+  "4f72d8bfa90b716f": "marzo de 2026",
   "4f7a916f127fe3f8": [
     {
       "c": "¿Listo para Encontrar tu Espacio?",
@@ -235,16 +316,21 @@
       "t": "p"
     }
   ],
+  "562eb8241da9f649": "Día de demostración de startups",
   "574e31a451798430": {
     "c": "Lo que dicen nuestros miembros",
     "i": 1,
     "t": "h2"
   },
+  "5829f9e2558cccce": "Cancelar RSVP",
+  "5a77331068e9b1d7": "Oficina de esquina",
   "5ae650ff9fbc3b42": {
     "c": "Mensual",
     "i": 1,
     "t": "span"
   },
+  "5b33c9f4db76f462": "Tomas de corriente",
+  "5c7a24036d16a072": "Wi‑Fi de alta velocidad",
   "5d292c9be81a168b": {
     "c": [
       {
@@ -271,8 +357,12 @@
     "i": 1,
     "t": "div"
   },
+  "5eb33264df7cca60": "Oficina en esquina de alta categoría, con ventanas panorámicas en dos lados. Es el espacio más privado y prestigioso de nuestro edificio.",
   "638db343bc894523": "Función",
+  "63acd41dd01e3969": "Videoconferencia",
   "63ec1478086d5484": "Comenzar",
+  "648c94ec57f6bc7d": "5 horas de uso de sala de reuniones al mes",
+  "69879438219d4212": "20 horas de sala de reuniones al mes",
   "6997f123da6c4b31": {
     "c": {
       "i": 2,
@@ -335,6 +425,7 @@
       "t": "div"
     }
   ],
+  "6ce76a7bd2211252": "Capacidad de 2 a 8 personas",
   "6d240761602d5035": {
     "c": [
       "Anual ",
@@ -356,6 +447,17 @@
     "t": "span"
   },
   "6df7bb7cab86e92e": "Eventos",
+  "7115353a5b37922e": {
+    "c": "Acerca de este espacio",
+    "i": 1,
+    "t": "h2"
+  },
+  "7125deccc63ade83": "Acceso a espacio de trabajo abierto compartido",
+  "7573cffabe49defa": {
+    "c": "Disponibilidad",
+    "i": 1,
+    "t": "h3"
+  },
   "75856e6d26fad674": {
     "d": {
       "b": {
@@ -413,7 +515,16 @@
     "i": 1,
     "t": "Plural"
   },
+  "7a8aae0c18103fa6": "Oficina privada para equipos pequeños con paredes de vidrio, pizarra y un rincón de reuniones exclusivo. Ideal para startups.",
+  "7cb9bd3fc1787715": "Almacenamiento seguro",
+  "7d1e28bcfcbb57dc": "Sesión matutina de yoga",
+  "7d2f5917c8a7a477": {
+    "c": "Confirmar reserva",
+    "i": 1,
+    "t": "h3"
+  },
   "7efc90499058dbca": "Membresía",
+  "83e76d94c411c1f3": "Taller de identidad de marca",
   "84e17ff6484716a7": {
     "c": [
       {
@@ -421,51 +532,49 @@
           "b": {
             "many": {
               "c": [
-                "quedan ",
                 {
                   "i": 4,
                   "k": "_gt_n_4",
                   "v": "n"
                 },
-                " lugares"
+                " lugares restantes"
               ],
               "i": 3,
               "t": "C3"
             },
             "other": {
               "c": [
-                "quedan ",
                 {
                   "i": 4,
                   "k": "_gt_n_4",
                   "v": "n"
                 },
-                " lugares"
+                " lugares restantes"
               ],
               "i": 3,
               "t": "C3"
             },
             "plural": {
               "c": [
-                "quedan ",
                 {
                   "i": 4,
                   "k": "_gt_n_4",
                   "v": "n"
                 },
-                " lugares"
+                " lugares restantes"
               ],
               "i": 3,
               "t": "C3"
             },
             "singular": {
               "c": [
+                "queda ",
                 {
                   "i": 4,
                   "k": "_gt_n_4",
                   "v": "n"
                 },
-                " lugar disponible"
+                " lugar"
               ],
               "i": 3,
               "t": "C3"
@@ -486,17 +595,33 @@
     "i": 1,
     "t": "span"
   },
+  "877bdfaa10bd221a": "Acceso a eventos de la comunidad",
+  "898486ed7db0a8aa": "5 h/mes",
+  "8b1e56a69599867e": {
+    "c": "Espacio",
+    "i": 1,
+    "t": "span"
+  },
   "8b79dbd1a20c323c": {
     "c": "Servicios",
     "i": 1,
     "t": "h2"
   },
+  "8c3781efecbf0999": "Taller",
+  "8e4ba438d92d2659": "Acceso 24/7",
+  "9302f037f4f0c55d": "Tu propio escritorio permanente con espacio de almacenamiento propio. Ideal para trabajadores en remoto y propietarios de pequeñas empresas que quieren un espacio de trabajo fijo.",
   "930c5ddf14ca4149": {
     "c": "Todo lo que necesitas",
     "i": 1,
     "t": "h2"
   },
   "949b6367d793ab62": "Volver a Espacios",
+  "95f7c7f1350b3c8b": "Impresión y escaneo",
+  "98d7dd2e0146c108": "personas",
+  "9ad5f0d548575618": "Menos de $50/día",
+  "a04a2fe6c7ac9403": "Puestos flexibles en nuestro espacio de trabajo abierto. Perfecto para freelancers que necesitan un entorno profesional solo algunos días a la semana.",
+  "a273d930487db7ad": "Café y té incluidos",
+  "a4855778fa26c210": "10 h/mes",
   "a5b19ede35a06280": {
     "d": {
       "b": {
@@ -510,6 +635,9 @@
     "i": 1,
     "t": "Branch"
   },
+  "a66f1c502c29c5ce": "Espacio de reunión compacto para reuniones rápidas de equipo y sesiones de lluvia de ideas. Equipado con una pizarra inteligente.",
+  "abeb08ccd52461bd": "Impresión (200 páginas al mes)",
+  "ad62271fad1f10aa": "RSVP",
   "ae55971f62f1a36f": {
     "c": {
       "d": {
@@ -571,6 +699,9 @@
     "i": 1,
     "t": "span"
   },
+  "af58cb46e1f07899": "Escritorio personal dedicado",
+  "afb4e487ca7576fe": "Mira cómo startups de nuestros miembros presentan sus productos ante un panel de inversores y mentores. Una tarde inspiradora de innovación.",
+  "afd796037af8634d": "Escritorio flexible B",
   "b10734a32cdcb795": [
     {
       "c": "Eventos comunitarios",
@@ -583,7 +714,10 @@
       "t": "p"
     }
   ],
-  "b3c3a1a1d6d33515": "Una plataforma de reservas multilingüe para espacios de coworking que demuestra las capacidades de internacionalización de General Translation. Explora espacios, compara membresías y descubre eventos.",
+  "b1bfe3c187d29766": "Almuerzo y charla: IA para pequeñas empresas",
+  "b3c3a1a1d6d33515": "Una plataforma multilingüe de reservas de espacios de coworking que demuestra las capacidades de internacionalización de General Translation. Explora espacios, compara membresías y descubre eventos.",
+  "b3fe87148afcb409": "Horas de sala de reuniones al mes",
+  "b599664ce144b092": "Puesto flexible en una esquina con vista a la ventana, que ofrece un espacio tranquilo para concentrarse. Incluye un soporte regulable para trabajar de pie.",
   "b5a035134bc1b928": [
     {
       "c": {
@@ -605,6 +739,53 @@
     "i": 1,
     "t": "p"
   },
+  "b931ee2ee101d01f": [
+    {
+      "c": [
+        {
+          "c": "Fecha",
+          "i": 2,
+          "t": "span"
+        },
+        {
+          "c": [
+            {
+              "i": 4,
+              "k": "_gt_n_4",
+              "v": "n"
+            },
+            ", 2026"
+          ],
+          "i": 3,
+          "t": "span"
+        }
+      ],
+      "i": 1,
+      "t": "div"
+    },
+    {
+      "c": [
+        {
+          "c": "Total",
+          "i": 6,
+          "t": "span"
+        },
+        {
+          "c": {
+            "i": 8,
+            "k": "_gt_cost_8",
+            "v": "c"
+          },
+          "i": 7,
+          "t": "span"
+        }
+      ],
+      "i": 5,
+      "t": "div"
+    }
+  ],
+  "b93a73a39dcb0ed5": "Sala de juntas profesional con una gran mesa de conferencias, pantalla para presentaciones y equipo de videoconferencia.",
+  "b97ed2557ded365c": "Oficina privada",
   "b98baa65a554e594": [
     {
       "c": "Planes de membresía",
@@ -617,7 +798,59 @@
       "t": "p"
     }
   ],
+  "ba9ddb0e6c2a981d": "Escritorio dedicado",
+  "bdfb3144d3b8a696": "Reservar Este Espacio",
+  "bf47bd40d274bb3b": [
+    {
+      "c": "\"Me encanta la flexibilidad del plan de escritorio compartido. Puedo trabajar desde distintos lugares según mi estado de ánimo, y el café es realmente bueno.\"",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Yuki Tanaka",
+          "i": 3,
+          "t": "p"
+        },
+        {
+          "c": [
+            "Ingeniera de software remota — Miembro desde ",
+            {
+              "i": 5,
+              "k": "_gt_n_5",
+              "v": "n"
+            }
+          ],
+          "i": 4,
+          "t": "p"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
+  "bf47d4ec82dc9d3e": "Taller práctico sobre cómo construir una identidad de marca sólida. Incluye principios de diseño de logotipos, psicología del color y tono de voz de la marca.",
+  "bf986c38bfc909ea": "Selecciona una fecha para reservar",
+  "bfcf32ce2a4b53e9": "Suite de estudio",
+  "c316859e7ffe9e04": "Oficina privada independiente",
+  "c721b1fce9204870": "Sa",
+  "c8526d3ff1e5ee69": "Oficina tipo loft",
+  "ca6bef5e8026b103": "Cabina para llamadas",
   "d15d4ce9981708e9": "Cancelar",
+  "d4290e50cdc35ddd": {
+    "d": {
+      "b": {
+        "desk": "Escritorio",
+        "meeting-room": "Sala de reuniones",
+        "office": "Oficina"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
+  "d6a55db014bb743b": "WiFi",
   "d6ef133448aabe82": [
     {
       "c": {
@@ -647,6 +880,19 @@
     }
   ],
   "d8a1c994a522f8bf": "Más Popular",
+  "d9bf286b02b5b26b": {
+    "d": {
+      "b": {
+        "all": "Todos los eventos",
+        "networking": "Redes",
+        "wellness": "Bienestar",
+        "workshop": "Talleres"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
   "de5fc39403a1180f": [
     {
       "c": {
@@ -661,10 +907,10 @@
       "c": {
         "d": {
           "b": {
-            "many": "Escritorios compartidos",
-            "other": "Hot Desks",
-            "plural": "Escritorios compartidos",
-            "singular": "Escritorio compartido"
+            "many": "Escritorios Compartidos",
+            "other": "Escritorios compartidos",
+            "plural": "Escritorios Compartidos",
+            "singular": "Hot Desk"
           },
           "t": "p"
         },
@@ -703,6 +949,9 @@
       "t": "p"
     }
   ],
+  "e23cf115f07abb1e": "Taller “Pitch Perfect”",
+  "e25c28248eaa043d": "Escritorio flexible",
+  "e363135d4e78a4a9": "Pizarra blanca",
   "e3b44f564cca49c8": {
     "c": {
       "d": {
@@ -719,6 +968,38 @@
     "i": 1,
     "t": "span"
   },
+  "e497cdad76079115": [
+    {
+      "c": "\"La comunidad aquí es increíble. Vine por el escritorio, pero me quedé por las personas. Solo los eventos de networking me han conseguido tres clientes importantes.\"",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Sarah Chen",
+          "i": 3,
+          "t": "p"
+        },
+        {
+          "c": [
+            "Diseñadora freelance — Miembro desde ",
+            {
+              "i": 5,
+              "k": "_gt_n_5",
+              "v": "n"
+            }
+          ],
+          "i": 4,
+          "t": "p"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
+  "e4a4a3d55204bd79": "Taquilla de almacenamiento con llave",
+  "e4a9f739c252c675": "Acceso 24/7",
   "e74139c17fab1fa1": "Confirmar",
   "e81da10f0f5e59af": {
     "c": {
@@ -729,5 +1010,12 @@
     "i": 1,
     "t": "span"
   },
-  "f64f68f55d516baa": "CoWork Hub | General Translation"
+  "ec269e573b854671": "Lu",
+  "ee38500dd040fbd3": "Una oficina privada totalmente cerrada para equipos que necesitan privacidad y concentración. Distribución personalizable con servicios premium.",
+  "f1e68ee79c32855d": "Conéctate con tus compañeros de trabajo mientras disfrutas de bebidas y aperitivos. Una tarde relajada para ampliar tu red profesional y compartir ideas.",
+  "f21ae2d263b40445": "Acceso a cabinas para llamadas",
+  "f64f68f55d516baa": "CoWork Hub | General Translation",
+  "f9335ddc96fbdc04": "Descubre formas prácticas de usar herramientas de IA para optimizar las operaciones de tu pequeña empresa. Almuerzo incluido.",
+  "fbc54fbbd428380b": "Espacio de almacenamiento",
+  "fcdce7ee1816e588": "Escritorio de altura regulable para trabajar de pie"
 }

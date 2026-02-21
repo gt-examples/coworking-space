@@ -1,22 +1,35 @@
 import Link from "next/link";
 import { T, Num, Plural } from "gt-next";
+import { getGT } from "gt-next/server";
 import { spaces } from "@/data/spaces";
-import { testimonials } from "@/data/events";
-
-const amenities = [
-  { icon: "WiFi", label: "High-Speed WiFi" },
-  { icon: "Coffee", label: "Unlimited Coffee & Tea" },
-  { icon: "Print", label: "Printing & Scanning" },
-  { icon: "Lock", label: "Secure Storage" },
-  { icon: "Phone", label: "Phone Booths" },
-  { icon: "24/7", label: "24/7 Building Access" },
-];
 
 const totalDesks = spaces.filter(s => s.type === "desk").length;
 const totalOffices = spaces.filter(s => s.type === "office").length;
 const totalMeetingRooms = spaces.filter(s => s.type === "meeting-room").length;
 
-export default function HomePage() {
+export default async function HomePage() {
+  const gt = await getGT();
+
+  const amenities = [
+    { icon: "Wi", label: gt("High-Speed WiFi") },
+    { icon: "Co", label: gt("Unlimited Coffee & Tea") },
+    { icon: "Pr", label: gt("Printing & Scanning") },
+    { icon: "Lo", label: gt("Secure Storage") },
+    { icon: "Ph", label: gt("Phone Booths") },
+    { icon: "24", label: gt("24/7 Building Access") },
+  ];
+
+  const spaceNames: Record<string, string> = {
+    "hot-desk-1": gt("Flex Desk A"),
+    "hot-desk-2": gt("Flex Desk B"),
+    "dedicated-desk-1": gt("Reserved Desk Alpha"),
+    "office-1": gt("Studio Suite"),
+    "office-2": gt("Loft Office"),
+    "meeting-1": gt("Boardroom"),
+    "meeting-2": gt("Huddle Room"),
+    "office-3": gt("Corner Office"),
+  };
+
   return (
     <div>
       {/* Hero */}
@@ -81,11 +94,9 @@ export default function HomePage() {
                 className="aspect-[4/3] rounded-xl flex items-end p-4 group-hover:scale-[1.02] transition-transform"
                 style={{ backgroundColor: space.color }}
               >
-                <T>
-                  <span className="text-sm font-medium text-white/90 bg-black/30 px-2 py-1 rounded">
-                    {space.name}
-                  </span>
-                </T>
+                <span className="text-sm font-medium text-white/90 bg-black/30 px-2 py-1 rounded">
+                  {spaceNames[space.id] || space.name}
+                </span>
               </div>
             </Link>
           ))}
@@ -102,11 +113,9 @@ export default function HomePage() {
             {amenities.map((a) => (
               <div key={a.icon} className="bg-zinc-900 border border-zinc-800 rounded-xl p-5 flex items-center gap-4">
                 <div className="w-10 h-10 rounded-lg bg-[#F59E0B]/10 flex items-center justify-center text-[#F59E0B] text-sm font-bold flex-shrink-0">
-                  {a.icon.slice(0, 2)}
+                  {a.icon}
                 </div>
-                <T>
-                  <span className="text-sm text-zinc-300">{a.label}</span>
-                </T>
+                <span className="text-sm text-zinc-300">{a.label}</span>
               </div>
             ))}
           </div>
@@ -119,17 +128,33 @@ export default function HomePage() {
           <h2 className="text-2xl font-bold text-white mb-8 text-center">What Our Members Say</h2>
         </T>
         <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((t) => (
-            <div key={t.name} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
-              <T>
-                <p className="text-zinc-300 text-sm mb-4 leading-relaxed">&ldquo;{t.text}&rdquo;</p>
-                <div>
-                  <p className="text-white font-medium text-sm">{t.name}</p>
-                  <p className="text-zinc-500 text-xs">{t.role} — Member since <Num>{t.memberSince}</Num></p>
-                </div>
-              </T>
-            </div>
-          ))}
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+            <T>
+              <p className="text-zinc-300 text-sm mb-4 leading-relaxed">&ldquo;The community here is incredible. I came for the desk, but I stayed for the people. The networking events alone have landed me three major clients.&rdquo;</p>
+              <div>
+                <p className="text-white font-medium text-sm">Sarah Chen</p>
+                <p className="text-zinc-500 text-xs">Freelance Designer — Member since <Num>{2023}</Num></p>
+              </div>
+            </T>
+          </div>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+            <T>
+              <p className="text-zinc-300 text-sm mb-4 leading-relaxed">&ldquo;Moving our team from a home office to a private suite here was the best decision we made. The professional environment and fast internet make all the difference.&rdquo;</p>
+              <div>
+                <p className="text-white font-medium text-sm">Marcus Rivera</p>
+                <p className="text-zinc-500 text-xs">Startup Founder — Member since <Num>{2024}</Num></p>
+              </div>
+            </T>
+          </div>
+          <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
+            <T>
+              <p className="text-zinc-300 text-sm mb-4 leading-relaxed">&ldquo;I love the flexibility of the hot desk plan. I can work from different spots depending on my mood, and the coffee is actually good.&rdquo;</p>
+              <div>
+                <p className="text-white font-medium text-sm">Yuki Tanaka</p>
+                <p className="text-zinc-500 text-xs">Remote Software Engineer — Member since <Num>{2025}</Num></p>
+              </div>
+            </T>
+          </div>
         </div>
       </section>
 

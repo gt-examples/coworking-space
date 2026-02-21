@@ -1,11 +1,48 @@
 "use client";
 
 import { useState } from "react";
-import { T, Currency, Num } from "gt-next";
+import { T, Currency, Num, useGT } from "gt-next";
 import { plans } from "@/data/membership";
 
 export default function MembershipPage() {
+  const gt = useGT();
   const [annual, setAnnual] = useState(false);
+
+  const planNames: Record<string, string> = {
+    "hot-desk": gt("Hot Desk"),
+    "dedicated-desk": gt("Dedicated Desk"),
+    "private-office": gt("Private Office"),
+  };
+
+  const planDescriptions: Record<string, string> = {
+    "hot-desk": gt("Flexible seating in our open workspace. Perfect for freelancers who need a professional environment a few days a week."),
+    "dedicated-desk": gt("Your own permanent desk with storage. Ideal for remote workers and small business owners who want a consistent workspace."),
+    "private-office": gt("A fully enclosed office for teams that need privacy and focus. Customizable layout with premium amenities."),
+  };
+
+  const featureTranslations: Record<string, string> = {
+    "Access to open workspace": gt("Access to open workspace"),
+    "High-speed WiFi": gt("High-speed WiFi"),
+    "Coffee and tea included": gt("Coffee and tea included"),
+    "5 hours of meeting room use per month": gt("5 hours of meeting room use per month"),
+    "Community events access": gt("Community events access"),
+    "Printing (50 pages/month)": gt("Printing (50 pages/month)"),
+    "Personal dedicated desk": gt("Personal dedicated desk"),
+    "Lockable storage cabinet": gt("Lockable storage cabinet"),
+    "10 hours of meeting room use per month": gt("10 hours of meeting room use per month"),
+    "External monitor provided": gt("External monitor provided"),
+    "Printing (200 pages/month)": gt("Printing (200 pages/month)"),
+    "Mail handling": gt("Mail handling"),
+    "24/7 access": gt("24/7 access"),
+    "Private enclosed office": gt("Private enclosed office"),
+    "Fits 2-8 people": gt("Fits 2-8 people"),
+    "Lockable door and storage": gt("Lockable door and storage"),
+    "20 hours of meeting room use per month": gt("20 hours of meeting room use per month"),
+    "External monitors for each desk": gt("External monitors for each desk"),
+    "Printing (unlimited)": gt("Printing (unlimited)"),
+    "Phone booth access": gt("Phone booth access"),
+    "Company signage on door": gt("Company signage on door"),
+  };
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -46,7 +83,6 @@ export default function MembershipPage() {
       <div className="grid md:grid-cols-3 gap-6">
         {plans.map((plan) => {
           const price = annual ? plan.annualPrice : plan.monthlyPrice;
-          const period = annual ? "/yr" : "/mo";
           return (
             <div
               key={plan.id}
@@ -59,23 +95,19 @@ export default function MembershipPage() {
                   <T>Most Popular</T>
                 </div>
               )}
-              <T>
-                <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
-                <p className="text-sm text-zinc-400 mb-6">{plan.description}</p>
-              </T>
+              <h3 className="text-xl font-bold text-white mb-2">{planNames[plan.id] || plan.name}</h3>
+              <p className="text-sm text-zinc-400 mb-6">{planDescriptions[plan.id] || plan.description}</p>
               <div className="mb-6">
-                <T>
-                  <span className="text-3xl font-bold text-[#F59E0B]">
-                    <Currency currency="USD">{price}</Currency>
-                  </span>
-                  <span className="text-zinc-500 text-sm">{period}</span>
-                </T>
+                <span className="text-3xl font-bold text-[#F59E0B]">
+                  <Currency currency="USD">{price}</Currency>
+                </span>
+                {annual ? <T><span className="text-zinc-500 text-sm">/yr</span></T> : <T><span className="text-zinc-500 text-sm">/mo</span></T>}
               </div>
               <ul className="space-y-3 mb-8">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-start gap-2 text-sm">
                     <span className="text-[#F59E0B] mt-0.5">&#10003;</span>
-                    <T><span className="text-zinc-300">{feature}</span></T>
+                    <span className="text-zinc-300">{featureTranslations[feature] || feature}</span>
                   </li>
                 ))}
               </ul>
@@ -104,24 +136,24 @@ export default function MembershipPage() {
               <tr className="border-b border-zinc-800">
                 <th className="text-left py-3 text-zinc-400 font-medium"><T>Feature</T></th>
                 {plans.map((p) => (
-                  <th key={p.id} className="text-center py-3 text-white font-medium"><T>{p.name}</T></th>
+                  <th key={p.id} className="text-center py-3 text-white font-medium">{planNames[p.id] || p.name}</th>
                 ))}
               </tr>
             </thead>
             <tbody className="text-zinc-400">
-              {[
-                ["WiFi", true, true, true],
-                ["Coffee & Tea", true, true, true],
-                ["Meeting Room Hours", "5 hrs/mo", "10 hrs/mo", "20 hrs/mo"],
-                ["Storage", false, true, true],
-                ["External Monitor", false, true, true],
-                ["24/7 Access", false, true, true],
-                ["Mail Handling", false, true, true],
-                ["Phone Booth", false, false, true],
-                ["Signage", false, false, true],
-              ].map(([feature, ...vals], i) => (
+              {([
+                [gt("WiFi"), true, true, true],
+                [gt("Coffee & Tea"), true, true, true],
+                [gt("Meeting Room Hours"), gt("5 hrs/mo"), gt("10 hrs/mo"), gt("20 hrs/mo")],
+                [gt("Storage"), false, true, true],
+                [gt("External Monitor"), false, true, true],
+                [gt("24/7 Access"), false, true, true],
+                [gt("Mail Handling"), false, true, true],
+                [gt("Phone Booth"), false, false, true],
+                [gt("Signage"), false, false, true],
+              ] as [string, string | boolean, string | boolean, string | boolean][]).map(([feature, ...vals], i) => (
                 <tr key={i} className="border-b border-zinc-800/50">
-                  <td className="py-3"><T>{feature as string}</T></td>
+                  <td className="py-3">{feature}</td>
                   {vals.map((v, j) => (
                     <td key={j} className="text-center py-3">
                       {v === true ? (
@@ -129,7 +161,7 @@ export default function MembershipPage() {
                       ) : v === false ? (
                         <span className="text-zinc-600">&mdash;</span>
                       ) : (
-                        <T><span>{v as string}</span></T>
+                        <span>{v}</span>
                       )}
                     </td>
                   ))}

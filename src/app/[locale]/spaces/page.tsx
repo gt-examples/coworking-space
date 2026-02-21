@@ -2,22 +2,46 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { T, Num, Currency, Plural, Branch } from "gt-next";
+import { T, Num, Currency, Plural, Branch, useGT } from "gt-next";
 import { spaces } from "@/data/spaces";
 
 const spaceTypes = ["all", "desk", "office", "meeting-room"] as const;
 const capacityOptions = [0, 1, 4, 6, 8, 12];
-const priceRanges = [
-  { label: "All Prices", min: 0, max: Infinity },
-  { label: "Under $50/day", min: 0, max: 50 },
-  { label: "$50-$150/day", min: 50, max: 150 },
-  { label: "Over $150/day", min: 150, max: Infinity },
-];
 
 export default function SpacesPage() {
+  const gt = useGT();
   const [typeFilter, setTypeFilter] = useState<string>("all");
   const [capacityFilter, setCapacityFilter] = useState(0);
   const [priceRange, setPriceRange] = useState(0);
+
+  const priceRanges = [
+    { label: gt("All Prices"), min: 0, max: Infinity },
+    { label: gt("Under $50/day"), min: 0, max: 50 },
+    { label: gt("$50-$150/day"), min: 50, max: 150 },
+    { label: gt("Over $150/day"), min: 150, max: Infinity },
+  ];
+
+  const spaceNames: Record<string, string> = {
+    "hot-desk-1": gt("Flex Desk A"),
+    "hot-desk-2": gt("Flex Desk B"),
+    "dedicated-desk-1": gt("Reserved Desk Alpha"),
+    "office-1": gt("Studio Suite"),
+    "office-2": gt("Loft Office"),
+    "meeting-1": gt("Boardroom"),
+    "meeting-2": gt("Huddle Room"),
+    "office-3": gt("Corner Office"),
+  };
+
+  const spaceDescriptions: Record<string, string> = {
+    "hot-desk-1": gt("Open-plan hot desk in our main workspace area with natural lighting and ergonomic seating. Perfect for freelancers and remote workers."),
+    "hot-desk-2": gt("Corner hot desk with a window view, offering a quiet space to focus. Includes a standing desk converter."),
+    "dedicated-desk-1": gt("Your own permanent desk with lockable storage. Located in our quieter dedicated area with fellow long-term members."),
+    "office-1": gt("Private office for small teams with glass walls, whiteboard, and a dedicated meeting nook. Ideal for startups."),
+    "office-2": gt("Spacious private office on the mezzanine level with exposed brick walls and industrial charm. Fits a growing team."),
+    "meeting-1": gt("Professional boardroom with large conference table, presentation screen, and video conferencing equipment."),
+    "meeting-2": gt("Compact meeting space for quick team syncs and brainstorming sessions. Equipped with a smartboard."),
+    "office-3": gt("Premium corner office with panoramic windows on two sides. The most private and prestigious space in our building."),
+  };
 
   const filtered = spaces.filter((s) => {
     if (typeFilter !== "all" && s.type !== typeFilter) return false;
@@ -67,9 +91,9 @@ export default function SpacesPage() {
           onChange={(e) => setCapacityFilter(Number(e.target.value))}
           className="bg-zinc-800 border border-zinc-700 text-zinc-300 rounded-lg px-4 py-2 text-sm"
         >
-          <option value={0}>Any Capacity</option>
+          <option value={0}>{gt("Any Capacity")}</option>
           {capacityOptions.slice(1).map((cap) => (
-            <option key={cap} value={cap}>{cap}+ people</option>
+            <option key={cap} value={cap}>{cap}+ {gt("people")}</option>
           ))}
         </select>
 
@@ -117,10 +141,8 @@ export default function SpacesPage() {
                 </T>
               </div>
               <div className="p-5">
-                <T>
-                  <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-[#F59E0B] transition-colors">{space.name}</h3>
-                  <p className="text-sm text-zinc-400 mb-3 line-clamp-2">{space.description}</p>
-                </T>
+                <h3 className="text-lg font-semibold text-white mb-1 group-hover:text-[#F59E0B] transition-colors">{spaceNames[space.id] || space.name}</h3>
+                <p className="text-sm text-zinc-400 mb-3 line-clamp-2">{spaceDescriptions[space.id] || space.description}</p>
                 <div className="flex items-center justify-between">
                   <T>
                     <span className="text-[#F59E0B] font-semibold">

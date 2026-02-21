@@ -2,17 +2,54 @@
 
 import { useState, use } from "react";
 import Link from "next/link";
-import { T, Num, Currency, Branch } from "gt-next";
-import { spaces, amenityLabels } from "@/data/spaces";
-
-const daysInMonth = 31;
-const monthName = "March 2026";
+import { T, Num, Currency, Branch, useGT } from "gt-next";
+import { spaces } from "@/data/spaces";
 
 export default function SpaceDetailPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = use(params);
+  const gt = useGT();
   const space = spaces.find((s) => s.id === id);
   const [selectedDate, setSelectedDate] = useState<number | null>(null);
   const [showBooking, setShowBooking] = useState(false);
+
+  const spaceNames: Record<string, string> = {
+    "hot-desk-1": gt("Flex Desk A"),
+    "hot-desk-2": gt("Flex Desk B"),
+    "dedicated-desk-1": gt("Reserved Desk Alpha"),
+    "office-1": gt("Studio Suite"),
+    "office-2": gt("Loft Office"),
+    "meeting-1": gt("Boardroom"),
+    "meeting-2": gt("Huddle Room"),
+    "office-3": gt("Corner Office"),
+  };
+
+  const spaceDescriptions: Record<string, string> = {
+    "hot-desk-1": gt("Open-plan hot desk in our main workspace area with natural lighting and ergonomic seating. Perfect for freelancers and remote workers."),
+    "hot-desk-2": gt("Corner hot desk with a window view, offering a quiet space to focus. Includes a standing desk converter."),
+    "dedicated-desk-1": gt("Your own permanent desk with lockable storage. Located in our quieter dedicated area with fellow long-term members."),
+    "office-1": gt("Private office for small teams with glass walls, whiteboard, and a dedicated meeting nook. Ideal for startups."),
+    "office-2": gt("Spacious private office on the mezzanine level with exposed brick walls and industrial charm. Fits a growing team."),
+    "meeting-1": gt("Professional boardroom with large conference table, presentation screen, and video conferencing equipment."),
+    "meeting-2": gt("Compact meeting space for quick team syncs and brainstorming sessions. Equipped with a smartboard."),
+    "office-3": gt("Premium corner office with panoramic windows on two sides. The most private and prestigious space in our building."),
+  };
+
+  const amenityLabels: Record<string, string> = {
+    "wifi": gt("High-Speed WiFi"),
+    "power": gt("Power Outlets"),
+    "coffee": gt("Coffee & Tea"),
+    "printing": gt("Printing & Scanning"),
+    "storage": gt("Lockable Storage"),
+    "monitor": gt("External Monitor"),
+    "whiteboard": gt("Whiteboard"),
+    "phone-booth": gt("Phone Booth"),
+    "standing-desk": gt("Standing Desk"),
+    "projector": gt("Projector"),
+    "video-conferencing": gt("Video Conferencing"),
+  };
+
+  const daysInMonth = 31;
+  const monthName = gt("March 2026");
 
   if (!space) {
     return (
@@ -29,6 +66,10 @@ export default function SpaceDetailPage({ params }: { params: Promise<{ id: stri
   }
 
   const days = Array.from({ length: daysInMonth }, (_, i) => i + 1);
+  const translatedName = spaceNames[space.id] || space.name;
+  const translatedDescription = spaceDescriptions[space.id] || space.description;
+
+  const dayAbbreviations = [gt("Su"), gt("Mo"), gt("Tu"), gt("We"), gt("Th"), gt("Fr"), gt("Sa")];
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
@@ -44,28 +85,26 @@ export default function SpaceDetailPage({ params }: { params: Promise<{ id: stri
             className="h-64 rounded-xl flex items-end p-6"
             style={{ backgroundColor: space.color }}
           >
-            <T>
-              <div>
-                <span className="text-xs font-medium bg-black/30 text-white px-2 py-1 rounded mb-2 inline-block">
+            <div>
+              <span className="text-xs font-medium bg-black/30 text-white px-2 py-1 rounded mb-2 inline-block">
+                <T>
                   <Branch
                     branch={space.type}
                     desk="Desk"
                     office="Office"
                     meeting-room="Meeting Room"
                   />
-                </span>
-                <h1 className="text-3xl font-bold text-white">{space.name}</h1>
-              </div>
-            </T>
+                </T>
+              </span>
+              <h1 className="text-3xl font-bold text-white">{translatedName}</h1>
+            </div>
           </div>
 
           {/* Description */}
-          <T>
-            <div>
-              <h2 className="text-xl font-semibold text-white mb-3">About This Space</h2>
-              <p className="text-zinc-400 leading-relaxed">{space.description}</p>
-            </div>
-          </T>
+          <div>
+            <T><h2 className="text-xl font-semibold text-white mb-3">About This Space</h2></T>
+            <p className="text-zinc-400 leading-relaxed">{translatedDescription}</p>
+          </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4">
@@ -98,9 +137,7 @@ export default function SpaceDetailPage({ params }: { params: Promise<{ id: stri
               {space.amenities.map((a) => (
                 <div key={a} className="flex items-center gap-3 bg-zinc-900 border border-zinc-800 rounded-lg p-3">
                   <div className="w-2 h-2 rounded-full bg-[#F59E0B]" />
-                  <T>
-                    <span className="text-sm text-zinc-300">{amenityLabels[a] || a}</span>
-                  </T>
+                  <span className="text-sm text-zinc-300">{amenityLabels[a] || a}</span>
                 </div>
               ))}
             </div>
@@ -124,13 +161,13 @@ export default function SpaceDetailPage({ params }: { params: Promise<{ id: stri
           {/* Calendar */}
           <div className="bg-zinc-900 border border-zinc-800 rounded-xl p-5">
             <T>
-              <h3 className="text-lg font-semibold text-white mb-4">Availability — {monthName}</h3>
+              <h3 className="text-lg font-semibold text-white mb-4">Availability</h3>
             </T>
+            <p className="text-sm text-zinc-400 mb-3">{monthName}</p>
             <div className="grid grid-cols-7 gap-1 mb-4">
-              {["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"].map((d) => (
+              {dayAbbreviations.map((d) => (
                 <div key={d} className="text-center text-xs text-zinc-500 py-1">{d}</div>
               ))}
-              {/* offset for March 2026 starting on Sunday */}
               {days.map((day) => {
                 const isBooked = space.bookedDates.includes(day);
                 const isSelected = selectedDate === day;
@@ -194,29 +231,29 @@ export default function SpaceDetailPage({ params }: { params: Promise<{ id: stri
                 : "bg-zinc-800 text-zinc-500 cursor-not-allowed"
             }`}
           >
-            <T>{selectedDate ? "Book This Space" : "Select a Date to Book"}</T>
+            {selectedDate ? <T>Book This Space</T> : <T>Select a Date to Book</T>}
           </button>
 
           {/* Booking modal */}
           {showBooking && selectedDate && (
             <div className="bg-zinc-900 border border-[#F59E0B]/30 rounded-xl p-5 space-y-4">
-              <T>
-                <h3 className="text-lg font-semibold text-white">Confirm Booking</h3>
-                <div className="space-y-2 text-sm">
-                  <div className="flex justify-between">
-                    <span className="text-zinc-400">Space</span>
-                    <span className="text-white">{space.name}</span>
-                  </div>
+              <T><h3 className="text-lg font-semibold text-white">Confirm Booking</h3></T>
+              <div className="space-y-2 text-sm">
+                <div className="flex justify-between">
+                  <T><span className="text-zinc-400">Space</span></T>
+                  <span className="text-white">{translatedName}</span>
+                </div>
+                <T>
                   <div className="flex justify-between">
                     <span className="text-zinc-400">Date</span>
-                    <span className="text-white">{monthName.split(" ")[0]} <Num>{selectedDate}</Num>, 2026</span>
+                    <span className="text-white"><Num>{selectedDate}</Num>, 2026</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-zinc-400">Total</span>
                     <span className="text-[#F59E0B] font-semibold"><Currency currency="USD">{space.pricePerDay}</Currency></span>
                   </div>
-                </div>
-              </T>
+                </T>
+              </div>
               <div className="flex gap-3">
                 <button
                   onClick={() => { setShowBooking(false); setSelectedDate(null); }}

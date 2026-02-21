@@ -1,9 +1,47 @@
 {
+  "01150ed469ac9217": "Bureau flexible A",
+  "05f800e80b4999e9": "Porte et rangements verrouillables",
+  "092e2e46781b53bb": "20 h/mois",
+  "0a88fc68ddf84207": "Gestion du courrier",
+  "0afcca0f0f38a7a2": "Soirée de réseautage mensuelle",
+  "0ddc0855da604e0a": "Bien-être",
+  "0f8a463b998c5ebd": [
+    {
+      "c": "« Passer d'un bureau à domicile à une suite privée ici a été la meilleure décision que nous ayons prise. L'environnement professionnel et la connexion internet rapide font toute la différence. »",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Marcus Rivera",
+          "i": 3,
+          "t": "p"
+        },
+        {
+          "c": [
+            "Fondateur de startup — Membre depuis ",
+            {
+              "i": 5,
+              "k": "_gt_n_5",
+              "v": "n"
+            }
+          ],
+          "i": 4,
+          "t": "p"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
   "1053cb6c6f395c84": {
     "c": "Nos espaces",
     "i": 1,
     "t": "h2"
   },
+  "107468fbff4f544a": "Impression (illimitée)",
+  "10e38d7accb25827": "Tous les tarifs",
   "10e9cc8f297bc282": [
     {
       "c": "Votre espace de travail, à votre façon",
@@ -16,6 +54,8 @@
       "t": "p"
     }
   ],
+  "12112597ef5124af": "Me",
+  "12ea3c5e6870422f": "Écrans externes à chaque poste",
   "14f0f47ccdede56c": [
     {
       "c": {
@@ -32,6 +72,13 @@
       "t": "p"
     }
   ],
+  "1604e66eb6bc13e9": "Commencez votre journée de travail par une séance de yoga guidée de 45 minutes sur notre toit-terrasse. Tous les niveaux sont les bienvenus. Tapis fournis.",
+  "16b42d05da1812f7": "Bureau privé spacieux en mezzanine, avec murs en briques apparentes et charme industriel. Convient à une équipe en croissance.",
+  "17dbba9b8d5264bc": "Je",
+  "17f4570f9e49e7e4": "Di",
+  "19c4e439ff77ca03": "Salle du conseil",
+  "1bb90ad9d01e2506": "Signalétique",
+  "1bbcb60f0f4271d4": "Apprenez à concevoir et à présenter un pitch percutant en quelques secondes. Mise en pratique avec des retours de la part d’entrepreneurs expérimentés.",
   "1c3b0670144a71b0": {
     "c": "Visualisation du plan d'étage bientôt disponible",
     "i": 1,
@@ -105,6 +152,11 @@
     "i": 1,
     "t": "span"
   },
+  "23cf612e6fe8f545": "Écran externe",
+  "246c7045335c26db": "Bureau privé Alpha",
+  "2484c3367a876054": "Salle de réunion d’équipe",
+  "254abaa0c0b97331": "Wi-Fi haut débit",
+  "26267d58e602e413": "Votre propre poste de travail attitré avec espace de rangement verrouillable. Situé dans notre espace dédié, plus calme, aux côtés d’autres membres de longue durée.",
   "276afefde2785962": {
     "c": "Plan d'étage",
     "i": 1,
@@ -128,6 +180,14 @@
     "i": 1,
     "t": "span"
   },
+  "2d58c4bc9e121888": "Écran externe inclus",
+  "2d8b7fe3c4a69919": "Accès au bâtiment 24 h/24, 7 j/7",
+  "2e120d15af3be9ff": "Ve",
+  "2f9e9200bb756f5f": "De 50 $ à 150 $ par jour",
+  "303a3e77ccf7d859": "Impressions (50 pages/mois)",
+  "30defb68e9b15f9f": "Réseautage",
+  "326c05a99af24649": "Ma",
+  "32a87d8da8f3f419": "Café et thé",
   "3336bc5b8f60effc": [
     {
       "c": [
@@ -163,6 +223,9 @@
       "t": "div"
     }
   ],
+  "33737b295d1ad325": "Nom de l’entreprise sur la porte",
+  "33de4ad2b70ed944": "Toutes les capacités",
+  "3475b11446ee9e92": "Plus de 150 $ par jour",
   "36bd487c0cd3e9df": [
     {
       "c": {
@@ -180,7 +243,11 @@
     }
   ],
   "37d50acf0d24b3a4": "Voir les forfaits",
+  "393d17ba677a797d": "Rangement verrouillable",
   "400e30bd193fb0a4": "Espaces",
+  "42a1d912877d7ac4": "Cabines téléphoniques",
+  "42b5da3dd11ba3ff": "Projecteur",
+  "430a8cc8f0f13f4d": "Café et thé à volonté",
   "43fc20ac4fbd41bf": {
     "c": [
       {
@@ -193,12 +260,25 @@
     "i": 1,
     "t": "span"
   },
+  "48ac362ec912569e": "Gestion du courrier",
+  "4a7f23a7e33e69f3": "10 heures d’utilisation de salles de réunion par mois",
   "4a8494d973ff3a9e": "CoWork Hub",
+  "4b365fdfe46e0317": {
+    "c": "/mois",
+    "i": 1,
+    "t": "span"
+  },
+  "4b7126205760267f": {
+    "c": "/an",
+    "i": 1,
+    "t": "span"
+  },
   "4cfc51eff5e8b0bf": {
     "c": "Aucun espace ne correspond à vos filtres. Essayez d'ajuster vos critères.",
     "i": 1,
     "t": "p"
   },
+  "4dd4c7f5bc66ca90": "Poste de travail nomade en open space dans notre espace de travail principal, avec lumière naturelle et sièges ergonomiques. Parfait pour les freelances et les télétravailleurs.",
   "4e0e6f42918aeade": [
     {
       "c": "Espace introuvable",
@@ -211,6 +291,7 @@
       "t": "p"
     }
   ],
+  "4f72d8bfa90b716f": "mars 2026",
   "4f7a916f127fe3f8": [
     {
       "c": "Prêt à trouver votre espace ?",
@@ -235,16 +316,21 @@
       "t": "p"
     }
   ],
+  "562eb8241da9f649": "Journée de démonstration de start-up",
   "574e31a451798430": {
     "c": "Ce que disent nos membres",
     "i": 1,
     "t": "h2"
   },
+  "5829f9e2558cccce": "Annuler la réservation",
+  "5a77331068e9b1d7": "Bureau d’angle",
   "5ae650ff9fbc3b42": {
     "c": "Mensuel",
     "i": 1,
     "t": "span"
   },
+  "5b33c9f4db76f462": "Prises électriques",
+  "5c7a24036d16a072": "Wi-Fi haut débit",
   "5d292c9be81a168b": {
     "c": [
       {
@@ -271,8 +357,12 @@
     "i": 1,
     "t": "div"
   },
+  "5eb33264df7cca60": "Bureau d’angle haut de gamme doté de baies vitrées sur deux côtés. L’espace le plus privé et prestigieux de notre immeuble.",
   "638db343bc894523": "Fonctionnalité",
+  "63acd41dd01e3969": "Système de visioconférence",
   "63ec1478086d5484": "Commencer",
+  "648c94ec57f6bc7d": "5 heures d’utilisation de salles de réunion par mois",
+  "69879438219d4212": "20 heures de salle de réunion par mois",
   "6997f123da6c4b31": {
     "c": {
       "i": 2,
@@ -284,7 +374,7 @@
   },
   "6a228d4c13f301e5": [
     {
-      "c": "Tarification",
+      "c": "Tarifs",
       "i": 1,
       "t": "h3"
     },
@@ -335,6 +425,7 @@
       "t": "div"
     }
   ],
+  "6ce76a7bd2211252": "Pour 2 à 8 personnes",
   "6d240761602d5035": {
     "c": [
       "Annuel ",
@@ -356,6 +447,17 @@
     "t": "span"
   },
   "6df7bb7cab86e92e": "Événements",
+  "7115353a5b37922e": {
+    "c": "À propos de cet espace",
+    "i": 1,
+    "t": "h2"
+  },
+  "7125deccc63ade83": "Accès à l’espace de travail en open space",
+  "7573cffabe49defa": {
+    "c": "Disponibilité",
+    "i": 1,
+    "t": "h3"
+  },
   "75856e6d26fad674": {
     "d": {
       "b": {
@@ -413,7 +515,16 @@
     "i": 1,
     "t": "Plural"
   },
+  "7a8aae0c18103fa6": "Bureau privé pour petites équipes, avec parois vitrées, tableau blanc et alcôve de réunion dédiée. Idéal pour les startups.",
+  "7cb9bd3fc1787715": "Stockage sécurisé",
+  "7d1e28bcfcbb57dc": "Séance de yoga matinale",
+  "7d2f5917c8a7a477": {
+    "c": "Confirmer la réservation",
+    "i": 1,
+    "t": "h3"
+  },
   "7efc90499058dbca": "Adhésion",
+  "83e76d94c411c1f3": "Atelier sur l’identité de marque",
   "84e17ff6484716a7": {
     "c": [
       {
@@ -483,17 +594,33 @@
     "i": 1,
     "t": "span"
   },
+  "877bdfaa10bd221a": "Accès aux événements de la communauté",
+  "898486ed7db0a8aa": "5 h/mois",
+  "8b1e56a69599867e": {
+    "c": "Espace",
+    "i": 1,
+    "t": "span"
+  },
   "8b79dbd1a20c323c": {
     "c": "Équipements",
     "i": 1,
     "t": "h2"
   },
+  "8c3781efecbf0999": "Atelier",
+  "8e4ba438d92d2659": "Accès 24 h/24",
+  "9302f037f4f0c55d": "Votre propre bureau permanent avec espace de rangement. Idéal pour les travailleurs à distance et les propriétaires de petites entreprises qui souhaitent un espace de travail stable.",
   "930c5ddf14ca4149": {
     "c": "Tout ce qu'il vous faut",
     "i": 1,
     "t": "h2"
   },
   "949b6367d793ab62": "Retour aux espaces",
+  "95f7c7f1350b3c8b": "Impression et numérisation",
+  "98d7dd2e0146c108": "personnes",
+  "9ad5f0d548575618": "Moins de 50 $ par jour",
+  "a04a2fe6c7ac9403": "Postes flexibles dans notre espace de travail ouvert. Parfait pour les freelances qui ont besoin d’un environnement professionnel quelques jours par semaine.",
+  "a273d930487db7ad": "Café et thé inclus",
+  "a4855778fa26c210": "10 h/mois",
   "a5b19ede35a06280": {
     "d": {
       "b": {
@@ -507,6 +634,9 @@
     "i": 1,
     "t": "Branch"
   },
+  "a66f1c502c29c5ce": "Petite salle de réunion pour de courtes réunions d’équipe et des séances de brainstorming. Équipée d’un tableau interactif.",
+  "abeb08ccd52461bd": "Impression (200 pages par mois)",
+  "ad62271fad1f10aa": "RSVP",
   "ae55971f62f1a36f": {
     "c": {
       "d": {
@@ -568,6 +698,9 @@
     "i": 1,
     "t": "span"
   },
+  "af58cb46e1f07899": "Poste de travail dédié",
+  "afb4e487ca7576fe": "Découvrez des startups membres présentant leurs produits à un panel d’investisseurs et de mentors. Un après-midi inspirant placé sous le signe de l’innovation.",
+  "afd796037af8634d": "Bureau flexible B",
   "b10734a32cdcb795": [
     {
       "c": "Événements communautaires",
@@ -580,7 +713,10 @@
       "t": "p"
     }
   ],
-  "b3c3a1a1d6d33515": "Une plateforme multilingue de réservation d’espaces de coworking qui illustre l’internationalisation avec General Translation. Parcourez les espaces, comparez les formules d’abonnement et découvrez les événements.",
+  "b1bfe3c187d29766": "Lunch & Learn : l’IA pour les petites entreprises",
+  "b3c3a1a1d6d33515": "Une plateforme multilingue de réservation d’espaces de coworking illustrant l’internationalisation avec General Translation. Parcourez les espaces, comparez les abonnements et découvrez les événements.",
+  "b3fe87148afcb409": "Heures de salle de réunion incluses",
+  "b599664ce144b092": "Poste de travail nomade d’angle, près d’une fenêtre, offrant un espace calme propice à la concentration. Comprend un bureau réglable assis‑debout.",
   "b5a035134bc1b928": [
     {
       "c": {
@@ -602,6 +738,53 @@
     "i": 1,
     "t": "p"
   },
+  "b931ee2ee101d01f": [
+    {
+      "c": [
+        {
+          "c": "Date",
+          "i": 2,
+          "t": "span"
+        },
+        {
+          "c": [
+            {
+              "i": 4,
+              "k": "_gt_n_4",
+              "v": "n"
+            },
+            ", 2026"
+          ],
+          "i": 3,
+          "t": "span"
+        }
+      ],
+      "i": 1,
+      "t": "div"
+    },
+    {
+      "c": [
+        {
+          "c": "Total",
+          "i": 6,
+          "t": "span"
+        },
+        {
+          "c": {
+            "i": 8,
+            "k": "_gt_cost_8",
+            "v": "c"
+          },
+          "i": 7,
+          "t": "span"
+        }
+      ],
+      "i": 5,
+      "t": "div"
+    }
+  ],
+  "b93a73a39dcb0ed5": "Salle de conseil professionnelle avec grande table de conférence, écran de présentation et équipement de visioconférence.",
+  "b97ed2557ded365c": "Bureau privatif",
   "b98baa65a554e594": [
     {
       "c": "Formules d'adhésion",
@@ -614,7 +797,59 @@
       "t": "p"
     }
   ],
+  "ba9ddb0e6c2a981d": "Bureau attitré",
+  "bdfb3144d3b8a696": "Réserver cet espace",
+  "bf47bd40d274bb3b": [
+    {
+      "c": "« J'adore la flexibilité du plan hot desk. Je peux travailler depuis différents endroits selon mon humeur, et le café est vraiment bon. »",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Yuki Tanaka",
+          "i": 3,
+          "t": "p"
+        },
+        {
+          "c": [
+            "Ingénieure logiciel à distance — Membre depuis ",
+            {
+              "i": 5,
+              "k": "_gt_n_5",
+              "v": "n"
+            }
+          ],
+          "i": 4,
+          "t": "p"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
+  "bf47d4ec82dc9d3e": "Atelier pratique sur la création d’une identité de marque solide. Aborde les principes de conception de logo, la psychologie des couleurs et le ton/voix de marque.",
+  "bf986c38bfc909ea": "Sélectionnez une date pour réserver",
+  "bfcf32ce2a4b53e9": "Suite studio",
+  "c316859e7ffe9e04": "Bureau privatif fermé",
+  "c721b1fce9204870": "Sa",
+  "c8526d3ff1e5ee69": "Bureau loft",
+  "ca6bef5e8026b103": "Cabine téléphonique",
   "d15d4ce9981708e9": "Annuler",
+  "d4290e50cdc35ddd": {
+    "d": {
+      "b": {
+        "desk": "Bureau",
+        "meeting-room": "Salle de réunion",
+        "office": "Bureau"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
+  "d6a55db014bb743b": "Wi-Fi",
   "d6ef133448aabe82": [
     {
       "c": {
@@ -644,6 +879,19 @@
     }
   ],
   "d8a1c994a522f8bf": "Le plus populaire",
+  "d9bf286b02b5b26b": {
+    "d": {
+      "b": {
+        "all": "Tous les événements",
+        "networking": "Réseau",
+        "wellness": "Bien-être",
+        "workshop": "Ateliers"
+      },
+      "t": "b"
+    },
+    "i": 1,
+    "t": "Branch"
+  },
   "de5fc39403a1180f": [
     {
       "c": {
@@ -700,6 +948,9 @@
       "t": "p"
     }
   ],
+  "e23cf115f07abb1e": "Atelier « Pitch parfait »",
+  "e25c28248eaa043d": "Poste nomade",
+  "e363135d4e78a4a9": "Tableau blanc",
   "e3b44f564cca49c8": {
     "c": {
       "d": {
@@ -716,6 +967,38 @@
     "i": 1,
     "t": "span"
   },
+  "e497cdad76079115": [
+    {
+      "c": "« La communauté ici est incroyable. Je suis venue pour le bureau, mais je suis restée pour les gens. Les événements de réseautage à eux seuls m'ont permis de décrocher trois clients majeurs. »",
+      "i": 1,
+      "t": "p"
+    },
+    {
+      "c": [
+        {
+          "c": "Sarah Chen",
+          "i": 3,
+          "t": "p"
+        },
+        {
+          "c": [
+            "Designer indépendante — Membre depuis ",
+            {
+              "i": 5,
+              "k": "_gt_n_5",
+              "v": "n"
+            }
+          ],
+          "i": 4,
+          "t": "p"
+        }
+      ],
+      "i": 2,
+      "t": "div"
+    }
+  ],
+  "e4a4a3d55204bd79": "Armoire de rangement verrouillable",
+  "e4a9f739c252c675": "Accès 24h/24 et 7j/7",
   "e74139c17fab1fa1": "Confirmer",
   "e81da10f0f5e59af": {
     "c": {
@@ -726,5 +1009,12 @@
     "i": 1,
     "t": "span"
   },
-  "f64f68f55d516baa": "CoWork Hub | General Translation"
+  "ec269e573b854671": "Lu",
+  "ee38500dd040fbd3": "Un bureau privatif entièrement fermé pour les équipes qui ont besoin de confidentialité et de concentration. Aménagement personnalisable avec prestations haut de gamme.",
+  "f1e68ee79c32855d": "Rencontrez vos collègues autour d’un verre et de quelques amuse-bouches. Une soirée détendue pour élargir votre réseau professionnel et échanger des idées.",
+  "f21ae2d263b40445": "Accès aux cabines téléphoniques",
+  "f64f68f55d516baa": "CoWork Hub | General Translation",
+  "f9335ddc96fbdc04": "Découvrez des façons concrètes d’utiliser des outils d’IA pour optimiser les opérations de votre petite entreprise. Déjeuner inclus.",
+  "fbc54fbbd428380b": "Espace de stockage",
+  "fcdce7ee1816e588": "Bureau assis-debout réglable"
 }

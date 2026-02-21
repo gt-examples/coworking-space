@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import { T, Num, Currency, DateTime, Plural } from "gt-next";
+import { T, Num, Currency, DateTime, Plural, Branch, useGT } from "gt-next";
 import { events } from "@/data/events";
 
 const categories = ["all", "networking", "workshop", "wellness"];
 
 export default function EventsPage() {
+  const gt = useGT();
   const [category, setCategory] = useState("all");
   const [rsvpd, setRsvpd] = useState<Set<string>>(new Set());
 
@@ -19,6 +20,30 @@ export default function EventsPage() {
       else next.add(id);
       return next;
     });
+  };
+
+  const eventNames: Record<string, string> = {
+    "networking-march": gt("Monthly Networking Mixer"),
+    "workshop-pitch": gt("Pitch Perfect Workshop"),
+    "lunch-learn-ai": gt("Lunch & Learn: AI for Small Business"),
+    "yoga-morning": gt("Morning Yoga Session"),
+    "demo-day": gt("Startup Demo Day"),
+    "workshop-branding": gt("Brand Identity Workshop"),
+  };
+
+  const eventDescriptions: Record<string, string> = {
+    "networking-march": gt("Connect with fellow coworkers over drinks and appetizers. A relaxed evening to expand your professional network and share ideas."),
+    "workshop-pitch": gt("Learn to craft and deliver a compelling elevator pitch. Hands-on practice with feedback from experienced entrepreneurs."),
+    "lunch-learn-ai": gt("Discover practical ways to use AI tools to streamline your small business operations. Lunch provided."),
+    "yoga-morning": gt("Start your workday with a 45-minute guided yoga session in our rooftop terrace. All levels welcome. Mats provided."),
+    "demo-day": gt("Watch member startups present their products to a panel of investors and mentors. An inspiring afternoon of innovation."),
+    "workshop-branding": gt("A hands-on workshop on building a strong brand identity. Covers logo design principles, color psychology, and brand voice."),
+  };
+
+  const categoryLabels: Record<string, string> = {
+    "networking": gt("Networking"),
+    "workshop": gt("Workshop"),
+    "wellness": gt("Wellness"),
   };
 
   return (
@@ -41,7 +66,13 @@ export default function EventsPage() {
             }`}
           >
             <T>
-              {cat === "all" ? "All Events" : cat === "networking" ? "Networking" : cat === "workshop" ? "Workshops" : "Wellness"}
+              <Branch
+                branch={cat}
+                all="All Events"
+                networking="Networking"
+                workshop="Workshops"
+                wellness="Wellness"
+              />
             </T>
           </button>
         ))}
@@ -64,11 +95,9 @@ export default function EventsPage() {
           return (
             <div key={event.id} className="bg-zinc-900 border border-zinc-800 rounded-xl p-6">
               <div className="flex items-start justify-between mb-3">
-                <T>
-                  <span className="text-xs font-medium bg-zinc-800 text-zinc-400 px-2 py-1 rounded capitalize">
-                    {event.category}
-                  </span>
-                </T>
+                <span className="text-xs font-medium bg-zinc-800 text-zinc-400 px-2 py-1 rounded capitalize">
+                  {categoryLabels[event.category] || event.category}
+                </span>
                 {event.fee > 0 ? (
                   <T>
                     <span className="text-[#F59E0B] font-semibold text-sm">
@@ -81,10 +110,8 @@ export default function EventsPage() {
                   </T>
                 )}
               </div>
-              <T>
-                <h3 className="text-lg font-semibold text-white mb-2">{event.name}</h3>
-                <p className="text-sm text-zinc-400 mb-4 leading-relaxed">{event.description}</p>
-              </T>
+              <h3 className="text-lg font-semibold text-white mb-2">{eventNames[event.id] || event.name}</h3>
+              <p className="text-sm text-zinc-400 mb-4 leading-relaxed">{eventDescriptions[event.id] || event.description}</p>
               <div className="flex flex-wrap gap-4 text-xs text-zinc-500 mb-4">
                 <T>
                   <span><DateTime>{event.date}</DateTime></span>
@@ -110,7 +137,7 @@ export default function EventsPage() {
                     : "bg-[#F59E0B] text-[#18181B] hover:bg-amber-400"
                 }`}
               >
-                <T>{rsvpd.has(event.id) ? "Cancel RSVP" : "RSVP"}</T>
+                {rsvpd.has(event.id) ? <T>Cancel RSVP</T> : <T>RSVP</T>}
               </button>
             </div>
           );
